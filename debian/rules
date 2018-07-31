@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm sdnotify-proxy
+	dh_auto_clean
+
+override_dh_auto_build:
+	go build -buildmode=pie

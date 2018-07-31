@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: CoreOS
+Upstream-Contact: https://github.com/coreos/sdnotify-proxy
+Source: https://github.com/coreos/sdnotify-proxy.git
+
+Files: *
+Copyright: 2014, Eugene Yakubovich
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2018, Jérôme Poulin <jeromepoulin@gmail.com>
+License: permissive
+ Copying and distribution of this package, with or without
+ modification, are permitted in any medium without royalty
+ provided the copyright notice and this notice are
+ preserved.

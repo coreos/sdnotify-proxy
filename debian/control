@@ -1,0 +1,14 @@
+Source: sdnotify-proxy
+Maintainer: Jérôme Poulin <jeromepoulin@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.7
+Vcs-Git: https://github.com/coreos/sdnotify-proxy.git
+Build-Depends: debhelper (>= 9), golang
+
+Package: sdnotify-proxy
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: sd_notify proxy between systemd and process in a different cgroup.
+ This hack solves the problem of Docker containers running under systemd
+ and wishing to make use of sd_notify facility.
